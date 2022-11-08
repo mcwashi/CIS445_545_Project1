@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleSheet.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <br>
+            <center><h1>Project 1 for CIS 445/545</h1></center></div>
+        <div class="navBar">
+            <ul class="nav">
+                <li class="nav"><a href="index.html">Profile</a></li>
+                <li class="nav"><a href="reflections.html">Reflection</a></li>
+                <li class="nav"><a href="showcases.html">Showcases/Achievements</a></li>
+                <li class="nav"><a href="qualifications.html">Qualifications</a></li>
+                <li class="nav"><a class="active" href="contactUs.html">Communications</a></li>
+              </ul>
+
+        </div>
+        <div class="body">
+            <h2><u>Communications</u></h2>
+
+            <div class="form-container">
+                <h1>Contact Form</h1>
+                <form name="contactForm" method="post" onsubmit = "return validate()" action="#">
+                  <label for="name">* Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" >
+                  <span class="errors"></span><br>
+              
+                  <label for="email">* Email</label>
+                  <input type="text" placeholder="Email address" id="email" name="email" >
+                  <span class="errors"></span><br>
+              
+                  <label for="phone">* Phone</label>
+                  <input type="text" placeholder="Phone number" id="phone" name="phone" >
+                  <span class="errors"></span><br>
+                  
+                  <label for="subject">* Message</label>
+                  <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
+                  <span class="errors"></span><br>
+              
+                  <button type="submit" value="Submit">Submit</button>
+                </form>
+              </div>
+
+        </div>
+        <div class="footer"></div>
+
+    </div>
+    <script src="js/validate.js"></script>
+  
+</body>
+</html>
